@@ -14,7 +14,12 @@ apiKey:'CHAVE_DE_SUA_API_SENDGRID'
 npm run dev
 ```
 
-## Nota
+## Nota 1
+```
+A api está programada para enviar o email para o Proprietário do projeto, caso queira mudar remetente e/ou destinatário, altere os atributos 'from' e 'to' dor corpo da mensagem.
+```
+
+## Nota 2
 ```
 Usuários Linux: Se ao executar o script aparecer a mensagem:
 'events.js:167
@@ -22,7 +27,7 @@ Usuários Linux: Se ao executar o script aparecer a mensagem:
       ^
 
 Error: listen EADDRINUSE: address already in use :::3000
-    at Server.setupListenHandle [as _listen2] (net.js:1294:14)..'
+    at Server.setupListenHandle [as _listen2] (net.js:1294:14) ...'
 
 Executar no terminal:
 
