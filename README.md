@@ -16,7 +16,8 @@ npm run dev
 
 ## Nota 1
 ```
-A api está programada para enviar o email para o Proprietário do projeto, caso queira mudar remetente e/ou destinatário, altere os atributos 'from' e 'to' dor corpo da mensagem.
+A api está programada para enviar o email para o Proprietário do projeto.
+Caso queira mudar remetente e/ou destinatário, altere os atributos 'from' e 'to' dor corpo da mensagem.
 ```
 
 ## Nota 2
