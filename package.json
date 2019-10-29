@@ -1,0 +1,21 @@
+{
+  "name": "email-sending-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main/App.js",
+    "dev": "./node_modules/.bin/nodemon src/main/App.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "async": "^2.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
+    "sendgrid": "^5.2.3"
+  }
+}
