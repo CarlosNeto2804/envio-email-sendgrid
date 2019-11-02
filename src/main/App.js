@@ -1,7 +1,7 @@
 "use strict";
 if (process.env.NODE_ENV == 'homolog') require('./../../config.homolog.js');
 else require('./../../config/config');
-require('./service/LoggerService');
+require('./services/LoggerService');
 
 const express = require('express');
 const cors = require('cors')

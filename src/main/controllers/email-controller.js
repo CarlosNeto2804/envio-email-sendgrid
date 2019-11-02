@@ -1,6 +1,6 @@
 "use strict";
 
-const EmailService = require("../service/EmailService");
+const EmailService = require("../services/email-service");
 
 module.exports = class EmailController {
     static async sendEmail(req, res) {

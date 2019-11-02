@@ -1,6 +1,6 @@
 "use strict";
 
-const EmailController = require("../controller/EmailController");
+const EmailController = require("../controllers/email-controller");
 
 module.exports = class OccupationRoute {
 

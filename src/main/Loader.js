@@ -12,7 +12,7 @@ class Loader {
     }
 
     static loadRoutes(app) {
-        let baseDir = (__dirname + '/route');
+        let baseDir = (__dirname + '/routes');
         fs
             .readdirSync(path.join(baseDir))
             .filter(function (file) {

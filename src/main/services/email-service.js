@@ -3,6 +3,7 @@ const SENDGRIG = require("@sendgrid/mail");
 module.exports = class EmailService {
   static async sendEmail(bodyEmail) {
     const keyApi = global.config.email.apiKey;
+    let pdf = bodyEmail.file.substr(28)
     try {
       SENDGRIG.setApiKey(`${keyApi}`);
       const msg = {
@@ -11,7 +12,16 @@ module.exports = class EmailService {
         subject: bodyEmail.assunto,
         html: `<strong>EXEMPLO DE ENVIO:${bodyEmail.from}</strong>
                 <div>${bodyEmail.texto}</div>
-            `
+            `,
+        attachments: [
+              {
+                filename: `Curriculo.pdf`,
+                content: pdf,
+                type: 'application/pdf',
+                disposition: 'attachment'
+              }
+            ]
+
       };
        let email = await SENDGRIG.send(msg);
        return email 
