@@ -47,7 +47,7 @@ Error: listen EADDRINUSE: address already in use :::3000
 $ netstat -lnp |grep 3000
 $ kill -9 NUMERO_DO_PROCESSO
 ```
-## Exemplo
+### Exemplo
 ```bash
 $ netstat -lnp |grep 3000
   tcp6       0      0 :::3000                 :::*                    OUÇA       9109/lite-server   
