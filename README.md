@@ -32,22 +32,16 @@ Error: listen EADDRINUSE: address already in use :::3000
 
 Executar no terminal:
 
-$ top | pgrep node
-$ sudo kill -9 RESULTADOS_DO_PRIMEIRO_COMANDO
+$ netstat -lnp |grep 3000
+$ kill -9 NUMERO_DO_PROCESSO
 ```
 ## Exemplo
+```bash
+$ netstat -lnp |grep 3000
+tcp6       0      0 :::3000                 :::*                    OUÇA       9109/lite-server   
+
+$ kill -9 9109
 ```
-$ top | pgrep node
-18610
-31094
-
-$ sudo kill -9 18610 31094
-```
-
-
-
-
-
 
 ### Customize configuration
 See [Configuration Reference](https://sendgrid.com/docs/for-developers/sending-email/).
