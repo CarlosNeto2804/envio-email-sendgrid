@@ -1,17 +1,28 @@
 ## Instalar dependências
-```
-npm install
+```bash
+$ npm install
 ```
 ## Criar Arquivo de conguração
-```
-Crair arquivo config.js no diretóri  ./config, seguindo o formato do config-exemple.js, substituindo os valores
-to:'EMAIL_DE_DESTINO',
-apiKey:'CHAVE_DE_SUA_API_SENDGRID'
+### Crair arquivo config.js no diretório ./config seguindo o exemplo
+```js
+class Config{
+    static createConfig(){
+        global.config = {
+            port: process.env.PORT || 3000,
+            email: {
+                to: '<<Email de Destino>>',
+                apiKey: '<< chave da api do sendgrid>>',
+            }
+        }
+    }
+}
+
+module.exports = Config.createConfig()
 ```
 
 ## Run
-```
-npm run dev
+```bash
+$ npm run dev
 ```
 
 ## Nota 1
