@@ -38,8 +38,9 @@ $ kill -9 NUMERO_DO_PROCESSO
 ## Exemplo
 ```bash
 $ netstat -lnp |grep 3000
-tcp6       0      0 :::3000                 :::*                    OUÇA       9109/lite-server   
-
+$ tcp6       0      0 :::3000                 :::*                    OUÇA       9109/lite-server   
+```
+```bash
 $ kill -9 9109
 ```
 
