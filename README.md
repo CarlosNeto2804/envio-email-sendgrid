@@ -30,8 +30,6 @@ $ npm run dev
 A api está programada para enviar o email para o Proprietário do projeto.
 Caso queira mudar remetente e/ou destinatário, altere os atributos 'from' e 'to' dor corpo da mensagem.
 ```
-
-<<<<<<< HEAD
 ### Nota 2
 ```
 Usuários Linux: Se ao executar o script aparecer a mensagem:
