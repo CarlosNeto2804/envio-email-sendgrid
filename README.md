@@ -39,7 +39,6 @@ Usuários Linux: Se ao executar o script aparecer a mensagem:
 ## Nota 2
 ### Usuários Linux: Se ao executar o script aparecer a mensagem:
 ```bash
->>>>>>> 0b39f1fb3c40e0d683945f910a3349aa44e53426
 'events.js:167
       throw er; // Unhandled 'error' event
       ^
@@ -53,23 +52,13 @@ Error: listen EADDRINUSE: address already in use :::3000
 $ netstat -lnp |grep 3000
 $ kill -9 NUMERO_DO_PROCESSO
 ```
-<<<<<<< HEAD
-#### Exemplo
-=======
 ### Exemplo
 ```bash
 $ netstat -lnp |grep 3000
   tcp6       0      0 :::3000                 :::*                    OUÇA       9109/lite-server   
->>>>>>> 0b39f1fb3c40e0d683945f910a3349aa44e53426
 ```
 ```bash
 $ kill -9 9109
 ```
-<<<<<<< HEAD
 ### Para Customizar envio
 veja [Configuration Reference](https://sendgrid.com/docs/for-developers/sending-email/).
-=======
-
-### Customize configuration
-See [Configuration Reference](https://sendgrid.com/docs/for-developers/sending-email/).
->>>>>>> 0b39f1fb3c40e0d683945f910a3349aa44e53426
